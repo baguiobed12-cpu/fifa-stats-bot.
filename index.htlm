@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101827">
+    <title>FIFA STATS BOT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<header>
+    <h1>⚽ FIFA STATS BOT</h1>
+    <p>Analyse intelligente de tes matchs FIFA</p>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>📊 Enregistrer un match</h2>
+
+        <input type="text" id="equipe1" placeholder="Équipe 1">
+
+        <input type="number" id="score1" placeholder="Score équipe 1">
+
+        <input type="text" id="equipe2" placeholder="Équipe 2">
+
+        <input type="number" id="score2" placeholder="Score équipe 2">
+
+        <button onclick="enregistrerMatch()">
+            Enregistrer le match
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>📈 Analyse statistique</h2>
+        <div id="statistiques">
+            <p>Aucun match enregistré.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>⚔️ Comparer deux équipes</h2>
+
+        <input type="text" id="comparaison1"
+        placeholder="Première équipe">
+
+        <input type="text" id="comparaison2"
+        placeholder="Deuxième équipe">
+
+        <button onclick="comparerEquipes()">
+            Comparer
+        </button>
+
+        <div id="resultatComparaison"></div>
+    </section>
+
+    <section class="card">
+        <h2>📚 Historique des matchs</h2>
+
+        <div id="historique">
+            Aucun match enregistré.
+        </div>
+
+        <button onclick="effacerHistorique()">
+            Effacer l'historique
+        </button>
+    </section>
+
+</main>
+
+<footer>
+    <p>FIFA STATS BOT © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</body>
+</html>
