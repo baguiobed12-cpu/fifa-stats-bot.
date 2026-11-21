@@ -1,0 +1,11 @@
+{
+  "name": "FIFA STATS BOT",
+  "short_name": "FIFA STATS",
+  "description": "Application intelligente d'analyse statistique des matchs FIFA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#101827",
+  "theme_color": "#16c784",
+  "orientation": "portrait",
+  "icons": []
+}
