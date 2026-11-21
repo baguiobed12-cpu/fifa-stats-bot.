@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    padding-bottom: 30px;
+}
+
+header {
+    background: #17243a;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 3px solid #16c784;
+}
+
+header h1 {
+    color: #16c784;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.card h2 {
+    color: #16c784;
+    margin-bottom: 18px;
+    font-size: 19px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border-radius: 7px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #16c784;
+    color: #101827;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+#statistiques,
+#historique,
+#resultatComparaison {
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px;
+    font-size: 13px;
+}
